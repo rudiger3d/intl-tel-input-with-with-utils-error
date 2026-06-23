@@ -7,10 +7,7 @@
   "main": "packages/components/vue-phone-input/dist/index.js",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
-    "watch": "vite build --watch",
-    "pub-alpha": "npm run pub -- --tag=alpha",
-    "pub-beta": "npm run pub -- --tag=beta",
-    "pub": "npm run --include-workspace-root --if-present publish-package --package=${npm_package_name}"
+    "watch": "vite build --watch"
   },
   "devDependencies": {
     "@types/node": "^22.13.1",
