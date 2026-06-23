@@ -1,0 +1,30 @@
+{
+  "name": "@bnr-dev/vue-phone-input",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A re-usable phone input component",
+  "files": ["dist/**/*"],
+  "main": "packages/components/vue-phone-input/dist/index.js",
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "watch": "vite build --watch",
+    "pub-alpha": "npm run pub -- --tag=alpha",
+    "pub-beta": "npm run pub -- --tag=beta",
+    "pub": "npm run --include-workspace-root --if-present publish-package --package=${npm_package_name}"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "sass-embedded": "^1.83.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0",
+    "vite-plugin-lib-inject-css": "^2.2.1",
+    "vue-tsc": "^2.2.0"
+  },
+
+  "dependencies": {
+    "@intl-tel-input/vue": "^29.1.0"
+  }
+}
